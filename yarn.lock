@@ -4826,9 +4826,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"effector-stream-01@workspace:.":
+"effector-stream-02@workspace:.":
   version: 0.0.0-use.local
-  resolution: "effector-stream-01@workspace:."
+  resolution: "effector-stream-02@workspace:."
   dependencies:
     "@babel/core": ^7.14.6
     "@babel/preset-env": ^7.14.7
