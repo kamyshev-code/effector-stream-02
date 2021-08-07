@@ -101,4 +101,4 @@ sample({
   target: $results,
 });
 
-export { $results };
+export { $results, Result };

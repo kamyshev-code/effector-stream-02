@@ -3,7 +3,7 @@ import { format, Interval, isSameDay } from 'date-fns';
 import { css } from '@linaria/core';
 import { useList } from 'effector-react';
 
-import { $results } from './results';
+import { $filteredFlights } from '../filtered';
 
 function formatDateTime(date: Date | number) {
   return format(date, 'yyyy.MM.dd HH:mm');
@@ -29,7 +29,7 @@ const containerClassName = css`
 `;
 
 export function ResultsPage() {
-  const list = useList($results, (result) => (
+  const list = useList($filteredFlights, (result) => (
     <List.Item>
       <List.Item.Meta
         title={`из ${result.origin} в ${result.destination}`}
