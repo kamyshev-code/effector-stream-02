@@ -4,6 +4,7 @@ import 'antd/dist/antd.css';
 import { SearchForm } from './features/search';
 import { ResultsPage } from './features/results';
 import { FiltersBar } from './features/filters';
+import { analyticsService } from './features/analytics';
 
 const Application = () => (
   <>
@@ -14,3 +15,5 @@ const Application = () => (
 );
 
 render(<Application />, document.getElementById('app'));
+
+analyticsService.initFx();
